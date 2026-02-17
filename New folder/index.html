@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Sister!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="screen1" class="screen">
+        <h1 class="fade-in">Happy Birthday to my amazing Sister!</h1>
+        <button onclick="showScreen('screen2')">Click for a Surprise 🎁</button>
+    </div>
+
+    <div id="screen2" class="screen hidden">
+        <div class="cake-section">
+            <div class="cake">🎂</div>
+            <div class="candles-lit">✨🕯️✨</div>
+            <h2>Make a wish!</h2>
+        </div>
+        <button id="move-forward" onclick="showScreen('screen3')">Move Forward ➡️</button>
+    </div>
+
+    <div id="screen3" class="screen hidden">
+        <div class="slideshow-container">
+            <img id="slideshow-img" src="img1.jpg.jpeg" alt="Memories">
+        </div>
+        <p id="photo-counter">Photo 1 of 4</p>
+        <button id="next-photo-btn" onclick="nextPhoto()">Next Photo 📸</button>
+    </div>
+
+    <div id="screen4" class="screen hidden">
+        <div class="final-card">
+            <p class="message-text">
+                Happy Birthday to my incredible sister! Through all the highs and lows, you’ve been my rock and my safe place. 
+                You know me better than anyone and always know how to turn my tears into smiles. 
+                Thank you for being the princess of her brother—cherished, loved, and absolutely irreplaceable. 
+                May your day be as bright and beautiful as your heart. I love you.
+            </p>
+            <div class="heart">❤️</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
